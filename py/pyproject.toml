@@ -34,8 +34,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/jmcentire/witness"
-Repository = "https://github.com/jmcentire/witness"
+Homepage = "https://github.com/wandercom/witness"
+Repository = "https://github.com/wandercom/witness"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/witness_client"]

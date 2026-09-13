@@ -27,10 +27,10 @@ charter.
 
 V1 is a TypeScript library + thin HTTP server.
 
-- **TypeScript library** (`@stack/witness`): Reeve and other TS
+- **TypeScript library** (`@exemplar-stack/witness`): Reeve and other TS
   consumers embed witness directly. Pluggable persistence (in-memory
   store ships by default; pg store wired by the consumer).
-- **HTTP server** (`@stack/witness/server`): a thin Hono wrapper that
+- **HTTP server** (`@exemplar-stack/witness/server`): a thin Hono wrapper that
   exposes the TS API to non-TS clients (Python: scram, baton,
   sentinel).
 - **Python client** (`witness-client`): async httpx client with
@@ -45,7 +45,7 @@ package with `.d.ts` files.
 ```json
 {
   "dependencies": {
-    "@stack/witness": "git+https://github.com/jmcentire/witness.git#v0.1.1"
+    "@exemplar-stack/witness": "git+https://github.com/wandercom/witness.git#v0.1.1"
   }
 }
 ```
@@ -79,7 +79,7 @@ within 60 seconds (configurable), witness fires a fallback hook
 ## Quickstart (TypeScript library)
 
 ```typescript
-import { createWitness } from '@stack/witness';
+import { createWitness } from '@exemplar-stack/witness';
 
 const witness = createWitness({
   policies: {
@@ -149,11 +149,11 @@ async with WitnessClient(base_url="http://localhost:8787") as w:
 ## Repo layout
 
 ```
-~/Code/witness/
+~/WanderRepos/repos/witness/
   SPEC.md                     # charter
   ADR-001-extraction.md       # architecture lock (sim-vetted)
   README.md                   # this file
-  package.json                # @stack/witness (TS package, root-level)
+  package.json                # @exemplar-stack/witness (TS package, root-level)
   tsconfig.json
   tsconfig.build.json         # `prepare` emits dist/ via this
   migrations/

@@ -18,7 +18,7 @@ Each surface implements two pieces:
    timer from firing.
 
 ```typescript
-import { createWitness, type SurfaceDispatcher } from '@stack/witness';
+import { createWitness, type SurfaceDispatcher } from '@exemplar-stack/witness';
 
 const slackSurface: SurfaceDispatcher = async (info) => {
   await slackClient.postMessage({
@@ -98,5 +98,5 @@ design — surface failure is not the caller's concern.
 
 V2 plans a registry pattern so surfaces are pluggable per consumer
 without changes to witness itself. Each surface lives in its own
-package (`@stack/witness-slack`, `@stack/witness-pagerduty`) and
+package (`@exemplar-stack/witness-slack`, `@exemplar-stack/witness-pagerduty`) and
 self-registers via a `register(witness)` call.

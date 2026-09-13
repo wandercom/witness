@@ -1,7 +1,7 @@
 # ADR-001: witness architecture
 
 **Status:** Accepted (2026-05-06; Claude/Codex/sim collaboration)
-**Source spec:** `~/Code/witness/SPEC.md`
+**Source spec:** `~/WanderRepos/repos/witness/SPEC.md`
 
 ## Context
 
@@ -33,7 +33,7 @@ witness's listOpen + answer APIs. Two-person rule per `kind`.**
 ### Library or service?
 
 V1: **library**. The same TS module exports the API; Reeve embeds
-witness as `@stack/witness` and uses pg for storage. Python
+witness as `@exemplar-stack/witness` and uses pg for storage. Python
 consumers (scram for two-person rule) hit a small HTTP service
 exposed by witness-server (a thin wrapper Reeve runs).
 
@@ -43,10 +43,10 @@ trivial because the storage already lives in pg.
 ### Repo layout
 
 ```
-~/Code/witness/
+~/WanderRepos/repos/witness/
 ├── SPEC.md
 ├── ADR-001-extraction.md
-├── package.json                # @stack/witness
+├── package.json                # @exemplar-stack/witness
 ├── pyproject.toml              # for scram + Python consumers
 ├── ts/
 │   ├── src/
@@ -239,7 +239,7 @@ gate; actions table owns the resulting work.
 
 ## Migration plan
 
-1. Init `~/Code/witness/`.
+1. Init `~/WanderRepos/repos/witness/`.
 2. Schema migration applied (decide: shared with Reeve's DB OR
    dedicated witness DB).
 3. Implement TS API + persistence + two-person.
