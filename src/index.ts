@@ -1,12 +1,12 @@
-// Public surface for @stack/witness.
+// Public surface for @exemplar-stack/witness.
 //
 // V1: TypeScript library + thin HTTP server.
-//   - Library: `import { createWitness } from '@stack/witness';`
-//   - Server: `import { buildHttpServer } from '@stack/witness/server';`
+//   - Library: `import { createWitness } from '@exemplar-stack/witness';`
+//   - Server: `import { buildHttpServer } from '@exemplar-stack/witness/server';`
 //
 // Consumers in TypeScript (Reeve operator queue, future TS clients)
 // embed the library directly. Consumers in Python (scram, baton,
-// sentinel) hit the HTTP server and use the @stack/witness-client
+// sentinel) hit the HTTP server and use the @exemplar-stack/witness-client
 // Python package.
 
 export type {

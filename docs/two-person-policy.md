@@ -29,7 +29,7 @@ state.
 V1 policy is in code. Pass a `policies` map to `createWitness`:
 
 ```typescript
-import { createWitness } from '@stack/witness';
+import { createWitness } from '@exemplar-stack/witness';
 
 const witness = createWitness({
   policies: {

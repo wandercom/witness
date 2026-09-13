@@ -1,4 +1,4 @@
-// Public API surface for @stack/witness.
+// Public API surface for @exemplar-stack/witness.
 //
 // Five operations callers need:
 //   - ask:    block until human answers (resolves on terminal status)

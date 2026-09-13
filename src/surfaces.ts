@@ -49,7 +49,7 @@ export const inboxSurface: SurfaceDispatcher = (info) => {
 //
 // These are not registered by default; they exist so consumers see
 // the contract before implementing. Real integrations live in
-// downstream packages (e.g., @stack/witness-slack, @stack/witness-pd)
+// downstream packages (e.g., @exemplar-stack/witness-slack, @exemplar-stack/witness-pd)
 // to keep witness's core dep-free. Each stub throws to make
 // "accidentally registered the stub" loud.
 

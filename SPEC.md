@@ -142,7 +142,7 @@ panels.
 3. Migrate the operator review queue's primitives to witness (the UI
    stays as is; just the underlying call shape moves).
 4. When scram lands and registers the first non-Reeve consumer,
-   extract to `~/Code/witness/`.
+   extract to `~/WanderRepos/repos/witness/`.
 
 ## Provenance
 

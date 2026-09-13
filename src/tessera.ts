@@ -11,7 +11,7 @@
 //
 // Real Tessera SDK doesn't exist yet (as of 2026-05). This file
 // documents the contract and ships a no-op default + a stdout
-// fallback so witness never silently drops audit. When @stack/tessera
+// fallback so witness never silently drops audit. When @exemplar-stack/tessera
 // publishes an SDK, consumers wire it via WitnessConfig.tessera.
 
 import { logger } from './logger.js';

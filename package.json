@@ -1,5 +1,5 @@
 {
-  "name": "@stack/witness",
+  "name": "@exemplar-stack/witness",
   "version": "0.1.1",
   "description": "witness — TypeScript library + thin HTTP server for human-in-the-loop coordination",
   "license": "MIT",
@@ -48,10 +48,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmcentire/witness.git"
+    "url": "git+https://github.com/wandercom/witness.git"
   },
-  "homepage": "https://github.com/jmcentire/witness#readme",
+  "homepage": "https://github.com/wandercom/witness#readme",
   "bugs": {
-    "url": "https://github.com/jmcentire/witness/issues"
+    "url": "https://github.com/wandercom/witness/issues"
   }
 }

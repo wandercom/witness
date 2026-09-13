@@ -1,4 +1,4 @@
-// Public types for @stack/witness.
+// Public types for @exemplar-stack/witness.
 //
 // witness is a coordination primitive — it surfaces a decision, blocks
 // the caller until a human answers, captures rationale, and writes
