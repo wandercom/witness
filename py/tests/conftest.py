@@ -1,7 +1,7 @@
 """Shared pytest fixtures for witness_client tests.
 
 The Python client tests exercise the real TypeScript HTTP server —
-spawning ``npx tsx ts/server/http.ts`` and waiting for /v1/health to
+spawning ``npx tsx server/http.ts`` and waiting for /v1/health to
 respond before yielding the base URL. This is the closest we get to
 a contract test for the wire format without mocking the server.
 
@@ -59,14 +59,14 @@ def witness_base_url() -> Iterator[str]:
 
     port = _free_port()
     repo_root = Path(__file__).resolve().parents[2]
-    server_path = repo_root / "ts" / "server" / "http.ts"
+    server_path = repo_root / "server" / "http.ts"
     if not server_path.exists():
-        pytest.skip(f"missing ts/server/http.ts at {server_path}")
+        pytest.fail(f"missing server/http.ts at {server_path}")
 
     env = {**os.environ, "WITNESS_PORT": str(port), "NODE_ENV": "test"}
     proc = subprocess.Popen(
         ["npx", "tsx", str(server_path)],
-        cwd=str(repo_root / "ts"),
+        cwd=str(repo_root),
         env=env,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
