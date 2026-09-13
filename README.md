@@ -78,6 +78,8 @@ within 60 seconds (configurable), witness fires a fallback hook
 
 ## Quickstart (TypeScript library)
 
+Development checks use Vitest 5 and require Node.js 22.x (>=22.12), 24.x, or 26+. Use Node 22 LTS for the documented test commands; the package runtime requirement is unchanged.
+
 ```typescript
 import { createWitness } from '@exemplar-stack/witness';
 
