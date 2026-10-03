@@ -1,7 +1,7 @@
 # ADR-001: witness architecture
 
 **Status:** Accepted (2026-05-06; Claude/Codex/sim collaboration)
-**Source spec:** `~/WanderRepos/repos/witness/SPEC.md`
+**Source spec:** `witness/SPEC.md`
 
 ## Context
 
@@ -43,7 +43,7 @@ trivial because the storage already lives in pg.
 ### Repo layout
 
 ```
-~/WanderRepos/repos/witness/
+witness/
 ├── SPEC.md
 ├── ADR-001-extraction.md
 ├── package.json                # @exemplar-stack/witness
@@ -239,7 +239,7 @@ gate; actions table owns the resulting work.
 
 ## Migration plan
 
-1. Init `~/WanderRepos/repos/witness/`.
+1. Init `witness/`.
 2. Schema migration applied (decide: shared with Reeve's DB OR
    dedicated witness DB).
 3. Implement TS API + persistence + two-person.

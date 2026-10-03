@@ -151,7 +151,7 @@ async with WitnessClient(base_url="http://localhost:8787") as w:
 ## Repo layout
 
 ```
-~/WanderRepos/repos/witness/
+witness/
   SPEC.md                     # charter
   ADR-001-extraction.md       # architecture lock (sim-vetted)
   README.md                   # this file
